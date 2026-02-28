@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Dashboard 2</title>
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="{{ url_for('home') }}">Heart Disease Project</a>
+    <a class="btn btn-light" href="{{ url_for('home') }}">Back to Home</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Heart Disease Dashboard 2</h2>
+
+  <!-- Tableau Dashboard 2 Embed -->
+  <div class='tableauPlaceholder' id='viz1771146044381' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Dashboard 2'
+        src='https://public.tableau.com/app/profile/thota.pravallika/viz/heart_diseaseproject/Dashboard2?publish=yes'
+        style='border: none' />
+      </a>
+    </noscript>
+
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https://public.tableau.com/' />
+      <param name='embed_code_version' value='3' />
+      <param name='name' value='TableauPackagedWorkbook_17711459188490/Dashboard2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='language' value='en-US' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1771146044381');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '800px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+</div>
+
+</body>
+</html>
